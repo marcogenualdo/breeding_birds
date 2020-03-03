@@ -213,7 +213,7 @@ def game (birds, attempts):
     #clock = pg.time.Clock()
 
     #initializing obstacles
-    f = open('rects.dat','r')
+    f = open('assets/coordinates/rects.dat','r')
     rects = deque([[width, int(f.readline().strip())]])
 
     #starting main loop

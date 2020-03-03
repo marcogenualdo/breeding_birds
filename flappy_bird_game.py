@@ -60,13 +60,13 @@ class Game:
         self.clock = pg.time.Clock()
 
         #setting variables
-        self.background = pg.image.load('background.jpeg')
+        self.background = pg.image.load('assets/images/background.jpeg')
         self.background = pg.transform.scale(self.background, self.window_size)
 
-        self.rect_up_img = pg.image.load('tp.png')
+        self.rect_up_img = pg.image.load('assets/images/tp.png')
         self.rect_up_img = pg.transform.scale(self.rect_up_img, (rect_width, self.rect_up_img.get_height()))
 
-        self.rect_down_img = pg.image.load('bp.png')
+        self.rect_down_img = pg.image.load('assets/images/bp.png')
         self.rect_down_img = pg.transform.scale(self.rect_down_img, (rect_width, self.rect_down_img.get_height()))
 
         self.rects = deque([[width, randint(ygap, height - ygap)]])

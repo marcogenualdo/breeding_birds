@@ -1,0 +1,9 @@
+*.pyc
+
+.vscode/
+.venv/
+
+# experimental files
+prova.py
+prova_img.py
+flapper.py
